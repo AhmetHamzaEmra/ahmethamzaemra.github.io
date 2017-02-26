@@ -1,5 +1,5 @@
 /*  ------------------------- 
-        Modified: Fernando Hernandez;
+        Modified: Ahmet Hamza Emra;
         Original Author: Vandré Leal Cândido
         Description: UI/UX Designer & Developer
         Year: 2014
@@ -8,7 +8,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
+th, tr, table { text-align: center;  padding: 10%}
 /* GENERAL STYLES */
 
 * {
@@ -459,14 +459,17 @@ img::-moz-selection{background:transparent;}
 
 #Nanodegree .item h4 {
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 150%;
     text-transform: uppercase;
     color: #444;
 }
 
 #Nanodegree .item p {
     margin-top: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     color: #666;
+
 }
 
 #Nanodegree .item i {
