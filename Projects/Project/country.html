@@ -109,7 +109,7 @@
       
        var format = d3.time.format( "%Y" );
 
-                d3.tsv( "data.txt", function( d ) {
+                d3.tsv( "dataa.txt", function( d ) {
                     d[ 'nkill' ] = +d[ 'nkill' ];
                     d[ 'iyear' ] = format.parse( d[ 'iyear' ] );
                     return d;
