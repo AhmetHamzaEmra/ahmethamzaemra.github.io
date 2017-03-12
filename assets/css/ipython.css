@@ -132,3 +132,6 @@ div#notebook {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+#medium {
+    width : 20%;
+}
