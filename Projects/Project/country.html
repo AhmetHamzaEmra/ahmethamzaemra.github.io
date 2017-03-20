@@ -118,15 +118,20 @@
       </script>
   </head>
 <body>
-<h1 style="text-align: center;">Total attacks by countries and number of people died</h1>
+<h1 style="text-align: center;">Total attacks by countries and number of people died<br />
+  
   <script type="text/javascript">
   /*
     Use D3 to load the GeoJSON file
     */
     
-d3.json("world_countries.json", draw);
-  </script>
-  <p>* every red circle respersent country<br />
+    d3.json("world_countries.json", draw);
+  </script><br />
+
+</h1>
+<p style="text-align: center;">
+  
+  * every red circle respersent country<br />
   * radius of circle respresent number of people who died in attacks</p>
 
 </body>
