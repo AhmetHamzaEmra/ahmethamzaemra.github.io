@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing Notepad"
+title: "Something and maybe more"
 description: 
 headline: 
 modified: 2014-07-19
