@@ -1,0 +1,16 @@
+---
+layout: default
+modal-id: 6
+date: 2014-07-15
+img: submarine.png
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+description: Machine Learning for Beginners
+Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.
+What is machine learning?
+Machine learning is the idea that there are generic algorithms that can tell you something interesting about a set of data without you having to write any custom code specific to the problem. Instead of writing code, you feed data to the generic algorithm and it builds its own logic based on the data.
+For example, the you have data set like this,
+
+---
