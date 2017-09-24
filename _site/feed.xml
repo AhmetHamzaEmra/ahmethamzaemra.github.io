@@ -5,8 +5,8 @@
     <description>Personal Blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 24 Sep 2017 00:57:46 -0500</pubDate>
-    <lastBuildDate>Sun, 24 Sep 2017 00:57:46 -0500</lastBuildDate>
+    <pubDate>Sun, 24 Sep 2017 01:02:53 -0500</pubDate>
+    <lastBuildDate>Sun, 24 Sep 2017 01:02:53 -0500</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -115,8 +115,8 @@
 &lt;p&gt;I will try to upload more post soon. Please share your knowledge, ask questions, make contributions. See you soon…&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Mar 2017 10:04:23 -0500</pubDate>
-        <link>http://localhost:4000/2017/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/welcome-to-jekyll/</guid>
+        <link>http://localhost:4000/2017/machine-learning/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/machine-learning/</guid>
         
         <category>ML</category>
         
