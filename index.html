@@ -1,56 +1,54 @@
 ---
 layout: default
 ---
-<section class="previews">
-  <div>
-    {% for post in paginator.posts %}
-      <figure class="absolute-bg preview__img" style="background-image: url('{{ post.image }}');"></figure>
-    {% endfor %}
-    <div class="previews__container">
-      <span>Welcome to</span>
-      <h1>{{ site.title }}</h1>
-    </div>
-  </div>
 
-  <div>
-    <header>
-      <ul class="tabs">
-        <li class="tabs__item">Posts</li>
-        <li class="tabs__item">Categories</li>
-      </ul>
-    </header>
-
-    <div class="tab">
-      <ul itemscope itemtype="http://schema.org/Blog">
-        {% for post in paginator.posts %}
-          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-            <a class="preview__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
-              <span class="preview__date" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2 class="preview__header" itemprop="name">{{ post.title }}</h2>
-              <p class="preview__excerpt" itemprop="description">{{ post.content | strip_html | truncatewords: 30 }}</p>
-              <span class="preview__more">Read More</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-
-      {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-          {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
-          {% endif %}
-
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
-          {% endif %}
+<div class="main-container transition--fade">
+    <section class="cover cover-12 form--dark imagebg height-100 parallax" data-overlay="4">
+        <div class="background-image-holder">
+            <img alt="image" src="img/hero14.jpg" />
         </div>
-      {% endif %}
+        <div class="container pos-vertical-center text-center-xs">
+            <div class="row pos-vertical-align-columns">
+                <div class="col-md-7 col-sm-8 col-sm-offset-2">
+                    <h2>Build smart, effective websites in no time with Pillar</h2>
+                    <div class="modal-instance modal-video-1">
+                        <div class="video-play-icon video-play-icon--sm modal-trigger"></div>
+                        <span class="h6">Watch The Overview</span>
+                        <div class="modal-container">
+                            <div class="modal-content bg-dark" data-width="60%" data-height="60%">
+                                <iframe src="https://www.youtube.com/embed/4QUVRm4UZA4?autoplay=1" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                            <!--end of modal-content-->
+                        </div>
+                        <!--end of modal-container-->
+                    </div>
+                    <!--end of modal instance-->
+                </div>
+                <div class="col-md-5 col-sm-8 col-sm-offset-2">
+                    <div class="form-subscribe-1 boxed boxed--lg bg--white text-center box-shadow-wide">
+                        <h4>Keep Informed</h4>
+                        <p class="lead">
+                            Subscribe for free resources and news updates.
+                        </p>
+                        <form class="" action="http://mrareco.createsend.com/t/d/s/kieth/" method="post" id="subForm" data-error="Please fill all fields correctly." data-success="Thanks for signing up! Please check your inbox for confirmation email.">
+                            <div class="input-with-icon">
+                                <label for="fieldName">Your Name</label>
+                                <i class="icon icon-Male-2"></i>
+                                <input id="fieldName" name="cm-name" type="text" />
+                            </div>
+                            <div class="input-with-icon">
+                                <label for="fieldEmail">Email Address</label>
+                                <i class="icon icon-Mail-2"></i>
+                                <input class="validate-required validate-email" id="fieldEmail" name="cm-kieth-kieth" type="email" required />
+                            </div>
+                            <button type="submit">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
 
-      {% include archive-link.html %}
-    </div>
-
-    {% include categories-tab.html %}
-
-  </div>
-
-</section>
+    
