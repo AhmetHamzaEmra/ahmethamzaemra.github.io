@@ -11,7 +11,7 @@ body {
   font-family: "Open Sans", sans-serif;
   height: auto;
   min-height: 100%;
-  line-height: 1.5; }
+  line-height: 1; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
@@ -254,10 +254,8 @@ main, .notepad-share-icons, .notepad-disqus {
     margin: 0;
     padding: 0;
     line-height: 1.1; }
-
     .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title a {
       color: black; }
-
   @media only screen and (min-width: 40.063em) {
     .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
       text-align: left;
@@ -542,18 +540,17 @@ figcaption {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
-.highlight { background-color: #f6f6f6; padding-top:0.5em; padding-bottom:0.5em; margin-top: 1em; margin-bottom: 1em; }
 .highlight .c { color: #3F6B5B; font-weight: bold} /* Comment */
 .highlight .err { color: #000000} /* Error */
 .highlight .g { color: #000000} /* Generic */
-.highlight .k { color: #011993; font-weight: bold} /* Keyword */
+.highlight .k { color: #F06F00; font-weight: bold} /* Keyword */
 .highlight .l { color: #000000} /* Literal */
 .highlight .n { color: #000000} /* Name */
 .highlight .o { color: #000000} /* Operator */
 .highlight .x { color: #000000} /* Other */
 .highlight .p { color: #000000} /* Punctuation */
 .highlight .cm { color: #3F6B5B; font-weight: bold} /* Comment.Multiline */
-.highlight .cp { color: #1071CE; font-weight: bold; } /* Comment.Preproc */
+.highlight .cp { color: #1071CE; font-weight: bold; text-decoration: underline} /* Comment.Preproc */
 .highlight .c1 { color: #3F6B5B; font-weight: bold} /* Comment.Single */
 .highlight .cs { color: #3F6B5B; font-weight: bold} /* Comment.Special */
 .highlight .gd { color: #2020ff; background-color: #c8f2ea } /* Generic.Deleted */
@@ -566,20 +563,20 @@ figcaption {
 .highlight .gs { color: #000000} /* Generic.Strong */
 .highlight .gu { color: #1014AD; font-weight: bold} /* Generic.Subheading */
 .highlight .gt { color: #EB1513; font-weight: bold} /* Generic.Traceback */
-.highlight .kc { color: #011993; font-weight: bold} /* Keyword.Constant */
-.highlight .kd { color: #011993; font-weight: bold} /* Keyword.Declaration */
-.highlight .kn { color: #011993; font-weight: bold} /* Keyword.Namespace */
-.highlight .kp { color: #011993; font-weight: bold} /* Keyword.Pseudo */
-.highlight .kr { color: #011993; font-weight: bold} /* Keyword.Reserved */
-.highlight .kt { color: #8a2be2; } /* Keyword.Type */
+.highlight .kc { color: #F06F00; font-weight: bold} /* Keyword.Constant */
+.highlight .kd { color: #F06F00; font-weight: bold} /* Keyword.Declaration */
+.highlight .kn { color: #F06F00; font-weight: bold} /* Keyword.Namespace */
+.highlight .kp { color: #F06F00; font-weight: bold} /* Keyword.Pseudo */
+.highlight .kr { color: #F06F00; font-weight: bold} /* Keyword.Reserved */
+.highlight .kt { color: #8a2be2; text-decoration: underline} /* Keyword.Type */
 .highlight .ld { color: #000000} /* Literal.Date */
-.highlight .m { color: #00C226;} /* Literal.Number */
-.highlight .s { color: #008e00} /* Literal.String */
+.highlight .m { color: #00C226; text-decoration: underline} /* Literal.Number */
+.highlight .s { color: #000000} /* Literal.String */
 .highlight .na { color: #000000} /* Name.Attribute */
 .highlight .nb { color: #000000} /* Name.Builtin */
 .highlight .nc { color: #000000} /* Name.Class */
-.highlight .no { color: #B91F49;} /* Name.Constant */
-.highlight .nd { color: #929000} /* Name.Decorator */
+.highlight .no { color: #B91F49; text-decoration: underline} /* Name.Constant */
+.highlight .nd { color: #000000} /* Name.Decorator */
 .highlight .ni { color: #ee0000; font-weight: bold} /* Name.Entity */
 .highlight .ne { color: #000000} /* Name.Exception */
 .highlight .nf { color: #000000} /* Name.Function */
@@ -587,14 +584,14 @@ figcaption {
 .highlight .nn { color: #000000} /* Name.Namespace */
 .highlight .nx { color: #000000} /* Name.Other */
 .highlight .py { color: #000000} /* Name.Property */
-.highlight .nt { color: #011993; font-weight: bold} /* Name.Tag */
-.highlight .nv { color: #8a2be2;} /* Name.Variable */
+.highlight .nt { color: #F06F00; font-weight: bold} /* Name.Tag */
+.highlight .nv { color: #8a2be2; text-decoration: underline} /* Name.Variable */
 .highlight .ow { color: #000000} /* Operator.Word */
 .highlight .w { color: #000000} /* Text.Whitespace */
-.highlight .mf { color: #00C226; } /* Literal.Number.Float */
-.highlight .mh { color: #00C226; } /* Literal.Number.Hex */
-.highlight .mi { color: #00C226; } /* Literal.Number.Integer */
-.highlight .mo { color: #00C226; } /* Literal.Number.Oct */
+.highlight .mf { color: #00C226; text-decoration: underline} /* Literal.Number.Float */
+.highlight .mh { color: #00C226; text-decoration: underline} /* Literal.Number.Hex */
+.highlight .mi { color: #00C226; text-decoration: underline} /* Literal.Number.Integer */
+.highlight .mo { color: #00C226; text-decoration: underline} /* Literal.Number.Oct */
 .highlight .sb { color: #000000} /* Literal.String.Backtick */
 .highlight .sc { color: #000000} /* Literal.String.Char */
 .highlight .sd { color: #000000} /* Literal.String.Doc */
@@ -607,10 +604,10 @@ figcaption {
 .highlight .s1 { color: #000000} /* Literal.String.Single */
 .highlight .ss { color: #000000} /* Literal.String.Symbol */
 .highlight .bp { color: #000000} /* Name.Builtin.Pseudo */
-.highlight .vc { color: #8a2be2; } /* Name.Variable.Class */
-.highlight .vg { color: #8a2be2; } /* Name.Variable.Global */
-.highlight .vi { color: #8a2be2; } /* Name.Variable.Instance */
-.highlight .il { color: #00C226; } /* Literal.Number.Integer.Long */
+.highlight .vc { color: #8a2be2; text-decoration: underline} /* Name.Variable.Class */
+.highlight .vg { color: #8a2be2; text-decoration: underline} /* Name.Variable.Global */
+.highlight .vi { color: #8a2be2; text-decoration: underline} /* Name.Variable.Instance */
+.highlight .il { color: #00C226; text-decoration: underline} /* Literal.Number.Integer.Long */
 .chart {
   max-width: 56.250rem;
   margin-right: auto;
@@ -618,7 +615,7 @@ figcaption {
 }
 /* =====================================
  * :: Select Text to Share CSS
- *
+ * 
  * @ Author: Hadrien Boyer
  * @ Website: http://hadrien-boyer.fr
  * @ v.0.1 - Last update : 2014/06/29
@@ -686,7 +683,7 @@ figcaption {
   top:0;
   left:0;
 }
-.tooltipContainer a {
+.tooltipContainer a { 
   width: 100%;
   background:transparent url(/images/sprites.png) 0px 0px no-repeat;
   padding:0;
@@ -1071,107 +1068,3 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
-
-          /* Rounded avatars */
-.avatar {
-    margin-bottom: 1em;
-    width:12.5rem;
-    height:12.5rem;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-
-    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
-    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
-}
-
-
-.smGlobalBtn{ /* global button class */
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 2px 2px #999;
-    padding: 0px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    font-weight: normal;
-    line-height: 2em;
-    margin-left: 6px;
-    margin-right: 6px;
-    border-radius: 25px;
-    -moz-border-radius:25px;
-    -webkit-border-radius:25px;
-}
-
-
-/* twitter button class*/
-.twitterBtn{
-    background: #00ABE3;
-}
-
-.twitterBtn:before{
-      font-family: "FontAwesome";
-      content: "\f099"; /* add twitter icon */
-      color:#FFFFFF;
-}
-
-.twitterBtn:hover{;
-      background: #00b4f2;
-      color:#FFFFFF;
-}
-
-/* google plus button class*/
-.googleplusBtn{
-    background: #e64522;
-    color:#FFFFFF;
-}
-
-.googleplusBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0d5"; /* add googleplus icon */
-      color:#FFFFFF;
-}
-
-.googleplusBtn:hover{
-      background: #ee4725;
-      color:#FFFFFF;
-}
-
-/* linkedin button class*/
-.linkedinBtn{
-    background: #0094BC;
-    color:#FFFFFF;
-}
-
-.linkedinBtn:before{
-      font-family: "FontAwesome";
-      content: "\f0e1"; /* add linkedin icon */
-      color:#FFFFFF;
-}
-
-.linkedinBtn:hover{
-      background: #00a3cf;
-      color:#FFFFFF;
-}
-
-/* github */
-.githubBtn{
-    background: #000000;
-    color:#FFFFFF;
-}
-
-.githubBtn:before{
-      font-family: "FontAwesome";
-      content: "\f09b"; /* add github icon */
-      color:#FFFFFF;
-}
-
-.githubBtn:hover{
-      background: #323232;
-      color:#FFFFFF;
-}
