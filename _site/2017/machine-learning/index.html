@@ -52,7 +52,7 @@
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
   
-  <link rel="stylesheet" href="/css/main.css?1506232973965578000">
+  <link rel="stylesheet" href="/css/main.css?1506234288409753000">
   <link rel="canonical" href="http://localhost:4000/2017/machine-learning/">
   <link rel="alternate" type="application/rss+xml" title="Ahmet Hamza Emra" href="/feed.xml">
 </head>
@@ -205,16 +205,30 @@
 
 <p>and you want to find out house that has 6 bathrooms and 7000, we don’t need to define extra functions or find out relation or formula of price. We just push data to our Machine Learning algorithm and it figures out for us.</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>  
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span>
-<span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">800</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1000</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4000</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">800</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4000</span><span class="p">]]</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1500</span><span class="p">,</span><span class="mi">10000</span><span class="p">,</span><span class="mi">1200</span><span class="p">,</span><span class="mi">8000</span><span class="p">]</span>
+
+
+<span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">800</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1000</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4000</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">800</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4000</span><span class="p">]]</span> <span class="c"># What we are teaching with (#Bathroom, sq.feet)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1500</span><span class="p">,</span><span class="mi">10000</span><span class="p">,</span><span class="mi">1200</span><span class="p">,</span><span class="mi">8000</span><span class="p">]</span> <span class="c"># What we want to find out </span>
+
+
+<span class="n">poly</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c"># converting dat ato polynomial </span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="n">reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span> <span class="c"># Main algorithm </span>
+<span class="n">reg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span> <span class="c"># Theaching with our examples</span>
+
+<span class="n">test_case</span> <span class="o">=</span> <span class="n">poly</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">7000</span><span class="p">])</span> <span class="c"># converting test case to same format as our training cases</span>
+<span class="n">prediction</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_case</span><span class="p">)</span> <span class="c"># Make a predictions </span>
+<span class="k">print</span><span class="p">(</span><span class="n">prediction</span><span class="p">)</span> <span class="c"># result = $18389,6</span>
+
 </code></pre>
 </div>
 
 <p>So the house we are looking for is $ 18389,6. It will be very hard to calculate it mathematically. (so , I will not do it :D )</p>
 
-<p>This is one of the algorithm called Regression. Documentation can be found in this link (http://scikit-learn.org/stable/modules/linear_model.html ). I will go over other machine learning types in next posts.</p>
+<p>This is one of the algorithm called Regression. Documentation can be found in this <a href="http://scikit-learn.org/stable/modules/linear_model.html">link</a>. I will go over other machine learning types in next posts.</p>
 
 <p>Regression problems are great point to start. They are relatively easy and has a lot of practice opportunity. Especially, Hackerrank.com has great AI section that contains very nice machine learning questions. There are bunch of questions for every level.</p>
 
@@ -233,7 +247,7 @@
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="/js/main.js?1506232973965578000"></script>
+<script type="text/javascript" src="/js/main.js?1506234288409753000"></script>
 
 
     </div>
