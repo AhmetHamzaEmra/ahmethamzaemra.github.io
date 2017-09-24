@@ -3,39 +3,131 @@
   <channel>
     <title>Ahmet Hamza Emra</title>
     <description>Personal Blog</description>
-    <link>http://localhost:4000/jekyll-uno/</link>
-    <atom:link href="http://localhost:4000/jekyll-uno/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 24 Sep 2017 00:01:42 -0500</pubDate>
-    <lastBuildDate>Sun, 24 Sep 2017 00:01:42 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 24 Sep 2017 00:43:58 -0500</pubDate>
+    <lastBuildDate>Sun, 24 Sep 2017 00:43:58 -0500</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Switch!</title>
+        <description>&lt;p&gt;by Chip Heath &amp;amp; Dan Heath&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Brief Summary:&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Three surprises about chance:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
+&lt;p&gt;There are three main factor plays best role. These are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rider&lt;/li&gt;
+  &lt;li&gt;Elephant&lt;/li&gt;
+  &lt;li&gt;Path&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this metaphor rider is our mind, elephant is emotions and path is environment.&lt;/p&gt;
+
+&lt;p&gt;1) Direct the Rider&lt;/p&gt;
+
+&lt;p&gt;Rider is basically our mind or thinking mechanism. And sometimes it can stick in some circumstances. So rider need to see the bright spot. But rider does not have all the power.&lt;/p&gt;
+
+&lt;p&gt;2) Motivate the Elephant&lt;/p&gt;
+
+&lt;p&gt;When the elephant wants to do something or doesn’t want to move then, even rider can see the exit of situation, Elephant will have the control. So that, elephant need to be motivated to do what rider says.&lt;/p&gt;
+
+&lt;p&gt;3) Shape the path&lt;/p&gt;
+
+&lt;p&gt;Without the path, the rider might go wrong path and might give up!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Mar 2017 10:04:23 -0500</pubDate>
+        <link>http://localhost:4000/2017/Switch/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Switch/</guid>
+        
+        <category>Personal Development</category>
+        
+        
+        <category>Books</category>
+        
+      </item>
+    
+      <item>
+        <title>Machine Learning for Beginners!</title>
+        <description>&lt;p&gt;Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-machine-learning&quot;&gt;What is machine learning?&lt;/h2&gt;
+
+&lt;p&gt;Machine learning is the idea that there are generic algorithms that can tell you something interesting about a set of data without you having to write any custom code specific to the problem. Instead of writing code, you feed data to the generic algorithm and it builds its own logic based on the data.&lt;/p&gt;
+
+&lt;p&gt;For example, the you have data set like this,&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Bathroom&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Sq. Feet&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$10000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;800&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1200&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$8000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;and you want to find out house that has 6 bathrooms and 7000, we don’t need to define extra functions or find out relation or formula of price. We just push data to our Machine Learning algorithm and it figures out for us.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.linear_model&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LinearRegression&lt;/span&gt; 
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PolynomialFeatures&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So the house we are looking for is $ 18389,6. It will be very hard to calculate it mathematically. (so , I will not do it :D )&lt;/p&gt;
 
+&lt;p&gt;This is one of the algorithm called Regression. Documentation can be found in this link (http://scikit-learn.org/stable/modules/linear_model.html ). I will go over other machine learning types in next posts.&lt;/p&gt;
+
+&lt;p&gt;Regression problems are great point to start. They are relatively easy and has a lot of practice opportunity. Especially, Hackerrank.com has great AI section that contains very nice machine learning questions. There are bunch of questions for every level.&lt;/p&gt;
+
+&lt;p&gt;I will try to upload more post soon. Please share your knowledge, ask questions, make contributions. See you soon…&lt;/p&gt;
 </description>
-        <pubDate>Fri, 08 Jan 2016 09:04:23 -0600</pubDate>
-        <link>http://localhost:4000/jekyll-uno/2016/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll-uno/2016/welcome-to-jekyll/</guid>
+        <pubDate>Sun, 12 Mar 2017 10:04:23 -0500</pubDate>
+        <link>http://localhost:4000/2017/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/welcome-to-jekyll/</guid>
         
-        <category>jekyll</category>
+        <category>ML</category>
+        
+        <category>Machine Learning</category>
+        
+        <category>AI</category>
+        
+        <category>Regression</category>
         
         
-        <category>jekyll</category>
+        <category>Machine Learning</category>
         
       </item>
     

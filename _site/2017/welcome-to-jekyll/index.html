@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="robots" content="noindex">
-  
 
-  <title>Ahmet Hamza Emra</title>
-  <meta name="description" content="Personal Blog">
+  <title>Machine Learning for Beginners!</title>
+  <meta name="description" content="Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.
+
+">
   <meta name="author" content="Ahmet Hamza Emra">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -18,14 +18,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Ahmet Hamza Emra">
-  <meta name="twitter:description" content="Personal Blog">
+  <meta name="twitter:title" content="Machine Learning for Beginners!">
+  <meta name="twitter:description" content="Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.
+
+">
   
   <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Ahmet Hamza Emra">
-  <meta property="og:description" content="Personal Blog">
+  <meta property="og:title" content="Machine Learning for Beginners!">
+  <meta property="og:description" content="Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.
+
+">
   <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
@@ -49,7 +53,7 @@
   <meta name="theme-color" content="#ffffff">
   
   <link rel="stylesheet" href="/css/main.css?1506231838233485000">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/2017/welcome-to-jekyll/">
   <link rel="alternate" type="application/rss+xml" title="Ahmet Hamza Emra" href="/feed.xml">
 </head>
 
@@ -142,45 +146,85 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <div class="main-post-list">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="12 Mar 2017" class="post-meta__date date">12 Mar 2017</time>
+      
+      &#8226; <span class="post-meta__tags">on <a href="/tags/#ML">ML</a> <a href="/tags/#Machine Learning">Machine Learning</a> <a href="/tags/#AI">AI</a> <a href="/tags/#Regression">Regression</a> </span>
+      
+    </div>
+    <h1 class="post-title">Machine Learning for Beginners!</h1>
+  </header>
 
-  <ol class="post-list">
-    
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="/2017/Switch/" title="Switch!">Switch!</a></h2>
-        <p class="excerpt">by Chip Heath &amp; Dan Heath
+  <section class="post">
+    <p>Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.</p>
 
-&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="23 Mar 2017" class="post-list__meta--date date">23 Mar 2017</time>
-            
-            &#8226; <span class="post-meta__tags">on <a href="/tags/#Personal Development">Personal Development</a> </span>
-            
-        </div>
-        <hr class="post-list__divider">
-      </li>
-    
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="/2017/welcome-to-jekyll/" title="Machine Learning for Beginners!">Machine Learning for Beginners!</a></h2>
-        <p class="excerpt">Since Artificial Intelligence is a hot topic right now, Machine Learning’s popularity is increasing. In this post, I will be summarizing what is machine learning and where to start.
+<h2 id="what-is-machine-learning">What is machine learning?</h2>
 
-&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="12 Mar 2017" class="post-list__meta--date date">12 Mar 2017</time>
-            
-            &#8226; <span class="post-meta__tags">on <a href="/tags/#ML">ML</a> <a href="/tags/#Machine Learning">Machine Learning</a> <a href="/tags/#AI">AI</a> <a href="/tags/#Regression">Regression</a> </span>
-            
-        </div>
-        <hr class="post-list__divider">
-      </li>
-    
-  </ol>
+<p>Machine learning is the idea that there are generic algorithms that can tell you something interesting about a set of data without you having to write any custom code specific to the problem. Instead of writing code, you feed data to the generic algorithm and it builds its own logic based on the data.</p>
 
-  <hr class="post-list__divider ">
+<p>For example, the you have data set like this,</p>
 
-  
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Bathroom</th>
+      <th style="text-align: center">Sq. Feet</th>
+      <th style="text-align: right">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">800</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: right">$1500</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">4000</td>
+      <td style="text-align: right">$10000</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">800</td>
+      <td style="text-align: right">$1200</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">4000</td>
+      <td style="text-align: right">$8000</td>
+    </tr>
+  </tbody>
+</table>
 
+<p>and you want to find out house that has 6 bathrooms and 7000, we don’t need to define extra functions or find out relation or formula of price. We just push data to our Machine Learning algorithm and it figures out for us.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span> 
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">PolynomialFeatures</span>
+<span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">800</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1000</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4000</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">800</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4000</span><span class="p">]]</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1500</span><span class="p">,</span><span class="mi">10000</span><span class="p">,</span><span class="mi">1200</span><span class="p">,</span><span class="mi">8000</span><span class="p">]</span>
+</code></pre>
 </div>
+
+<p>So the house we are looking for is $ 18389,6. It will be very hard to calculate it mathematically. (so , I will not do it :D )</p>
+
+<p>This is one of the algorithm called Regression. Documentation can be found in this link (http://scikit-learn.org/stable/modules/linear_model.html ). I will go over other machine learning types in next posts.</p>
+
+<p>Regression problems are great point to start. They are relatively easy and has a lot of practice opportunity. Especially, Hackerrank.com has great AI section that contains very nice machine learning questions. There are bunch of questions for every level.</p>
+
+<p>I will try to upload more post soon. Please share your knowledge, ask questions, make contributions. See you soon…</p>
+
+  </section>
+  
+</article>
+
+
 
       </div>
 
