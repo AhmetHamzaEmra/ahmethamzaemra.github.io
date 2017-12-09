@@ -83,3 +83,46 @@ resized = cv2.resize(img, (50,50)) # resize image to 50 by 50
 
 ## Data Augmentation 
 
+1. **Fliping**
+
+Fliping the images is one of the way to get some extra images. It is very handy tool but  also it has some disadvantages with it. For instance, we are classifying the CIFAR 10 dataset and we want to increase trainig set size. If we do horizontal flip, since we are adding upside down cars, horses, etc. this process might confuse our model. Ergo, it is great tool as long as we are careful. Lets see an example:
+
+``` python
+# the function takes two argument, first one image, 
+# second one orientation we want to flip
+horizontal_flip = cv2.flip( img, 0 )
+vertical_img = cv2.flip( img, 1 )
+both_img = cv2.flip( img, -1 )
+```
+
+<img src="/images/post4/flip.jpg">
+
+2. Rotating 
+
+Rotating is another way to increase images in the dataset and also it has the same disadvantage as flipping! 
+
+```python
+# -30 is the rotation angle
+matrix = cv2.getRotationMatrix2D((height/2, width/2), -30, 1)
+rotated = cv2.warpAffine(img, matrix, (img.shape[1], img.shape[0]))
+```
+
+<img src="/images/post4/rotated.jpg">
+
+Tip: insted of rotating every image with same angle, randomly rotating would generate more general distribution.
+
+3. Bluring
+
+Some times bluring the images also helps. On the other hand if the detailes is important in the image, it is not recommended. 
+
+``` python
+# (5,5) vertical and horizontal blur
+# must be odd number!
+blur = cv2.GaussianBlur(img, (55,55), 0)
+```
+
+<img src="/images/post4/blur.jpg">
+
+
+
+This is all for this post. See you next time! 
