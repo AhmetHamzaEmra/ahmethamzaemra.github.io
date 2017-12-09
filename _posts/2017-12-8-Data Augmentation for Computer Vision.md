@@ -34,7 +34,7 @@ We will be using this red panda img through out. the image is 580 by 636, colore
 
 First lets go over some functions:
 
-1. reading image from pc
+### Reading image as numpy array
 
 ```python
 >>> import cv2  # importing the module 
@@ -49,7 +49,7 @@ As we can see, we have 580 by 636 image with 3 color changes. In opencv first ch
 
  but we can change it with one function. 
 
-2. Color Conversion
+### Color Conversion
 
 cvtColor fucntion takes two argument, one of them is the image we want to change, other one is what color to what color we want to conver
 
@@ -69,7 +69,7 @@ img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)  # conver RGB to Gray
 
 
 
-3. Resizing 
+### Resizing 
 
 Another important thing is resizing. Deep learning models require to have same shape for every training example. But not all images are on same size, some of them are HD some of them are looks like they been taken by toaster. So to get same size for every image, We can use opencv's resize function as follows.
 
@@ -83,7 +83,7 @@ resized = cv2.resize(img, (50,50)) # resize image to 50 by 50
 
 ## Data Augmentation 
 
-1. **Fliping**
+### Fliping
 
 Fliping the images is one of the way to get some extra images. It is very handy tool but  also it has some disadvantages with it. For instance, we are classifying the CIFAR 10 dataset and we want to increase trainig set size. If we do horizontal flip, since we are adding upside down cars, horses, etc. this process might confuse our model. Ergo, it is great tool as long as we are careful. Lets see an example:
 
@@ -97,7 +97,7 @@ both_img = cv2.flip( img, -1 )
 
 <img src="/images/post4/flip.jpg">
 
-2. Rotating 
+### Rotating 
 
 Rotating is another way to increase images in the dataset and also it has the same disadvantage as flipping! 
 
@@ -111,7 +111,7 @@ rotated = cv2.warpAffine(img, matrix, (img.shape[1], img.shape[0]))
 
 Tip: insted of rotating every image with same angle, randomly rotating would generate more general distribution.
 
-3. Bluring
+### Bluring
 
 Some times bluring the images also helps. On the other hand if the detailes is important in the image, it is not recommended. 
 
