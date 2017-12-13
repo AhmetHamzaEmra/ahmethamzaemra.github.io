@@ -6,11 +6,11 @@ categories: [Deep Learning]
 tags: [ML, Machine Learning, AI, Deep Learning]
 ---
 
-
+<body>
 
 <iframe src="http://cs.stanford.edu/people/karpathy/convnetjs/demo/classify2d.html" width=100% heighy=500px></iframe>
 
-
+</body>
 
 
 
