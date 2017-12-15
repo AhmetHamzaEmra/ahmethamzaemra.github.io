@@ -6,9 +6,7 @@ categories: [Machine Learning]
 tags: [ML, Machine Learning, AI]
 ---
 
-## What is it? 
-
-It is basicaly combining many models to get better predictions. There are diffent methods, we can use them. Such as; 
+It is combining many models to get better predictions. There are diffent methods, we can use them. Such as; 
 
 * Averaging (or blending)
 * Weighted averaging 
@@ -28,7 +26,7 @@ Lets say we have a data and our predicitons are quite well under age 50 but afte
 predictions = (model1_predicitons + model2_predictions ) / 2 
 ```
 
-### WeighteD & Conditional averaging 
+### Weighted & Conditional averaging 
 
 ``` python
 predictions = (model1_predicitons * Weight1 + model2_predictions * Weight2 ) / 2 
