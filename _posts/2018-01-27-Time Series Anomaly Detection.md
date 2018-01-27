@@ -15,11 +15,13 @@ tags: [Anomaly, AI,  Deep Learning]
 
 ## **Summary**
 
-### <u>**About the data**</u>:
+
+
+### <u> ** About the data ** </u>:
 
 * 14 different sets of data where saved 5 min intervals. (288 each day)
 
-### <u>**About the problem**</u>: 
+### <u> ** About the problem ** </u>: 
 
 * When there are clear labels for anomalous data a binary classifier can be built predict anomalies and non-anomalouspoints. But in this case we dont have any label! Problem is finding anomalies without using labeled data.
 
