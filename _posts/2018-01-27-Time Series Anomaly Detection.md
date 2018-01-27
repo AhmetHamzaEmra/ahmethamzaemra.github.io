@@ -101,7 +101,7 @@ model.fit(x, y, n_epoch=10,  show_metric=True, snapshot_step=100)
 
 ```
 
-![](/Users/D/Desktop/plot1.png)
+![](https://github.com/AhmetHamzaEmra/ahmethamzaemra.github.io/blob/master/images/post5/plot1.png)
 
 ``` python
 dif = (true_y - y_preds)
@@ -128,7 +128,7 @@ for i in rolling_mean:
 
 
 
-![](/Users/D/Desktop/plot2.png)
+![](https://github.com/AhmetHamzaEmra/ahmethamzaemra.github.io/blob/master/images/post5/plot2.png)
 
 
 
@@ -148,7 +148,7 @@ for i in rolling_mean:
 
 * Fourier Series (a Fourier series is a way to represent a function as the sum of simple sine waves)	
 
-![](/Users/D/Desktop/Screen Shot 2018-01-27 at 12.38.12 PM.png)
+![](https://github.com/AhmetHamzaEmra/ahmethamzaemra.github.io/blob/master/images/post5/Screen%20Shot%202018-01-27%20at%2012.38.12%20PM.png)
 
 | **Anomaly rule** | Accumulator | Tail Probabilty | Intersection |
 | :--------------: | :---------: | :-------------: | :----------: |
