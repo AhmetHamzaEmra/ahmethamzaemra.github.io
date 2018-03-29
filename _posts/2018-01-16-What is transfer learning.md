@@ -2,7 +2,6 @@
 layout: post
 title: "Transfer Learning with Tflearn"
 tags: [Deep Learning, Transfer Learning]
-<!-- feature-img: "assets/img/sample_feature_img.png" -->
 ---
 
 
