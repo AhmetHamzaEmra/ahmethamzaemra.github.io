@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Augmentation for Computer Vision!
+title: "Data Augmentation for Computer Vision!"
 tags: [Deep Learning, Computer Vision]
 <!-- feature-img: "assets/img/sample_feature_img.png" -->
 
