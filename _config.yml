@@ -1,42 +1,82 @@
-# Site settings
-title: Ahmet Hamza Emra
-description: 'Personal Blog'
-url: 'ahmethamzaemra.github.io'
-baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+# SITE CONFIGURATION
+baseurl: "/"
+url: "https://ahmethamzaemra.github.io/"
 
-author:
-  name: 'Ahmet Hamza Emra'
-  email: hamza.emra@gmail.com
-  github_username:  ahmethamzaemra
-  linkedin_username:  ahmethamzaemra
-  about: Enthusiastic software engineer with experience in data science and machine learning. Passionate about Artificial intelli- gent, Community and Technology.
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Ahmet Hamza EMRA
+  avatar: assets/img/profile.jpg
+  favicon: assets/favicon.ico
+  gravatar: # Email MD5 hash
+  description: "A website with blog posts and pages" # used by search engines
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+  # Header and footer text
+  header_text: >
+     <p>Welcome to my blog!</p>
+  header_text_feature_image:
+  footer_text: >
+   Have fun :D 
+  # Icons
+  rss: false
+  email_address: "hamza.emra@gmail.com" # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab:
+  github: "ahmethamzaemra"
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "HamzaEmra"
+  wordpress:
+  youtube:
 
-# Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+  search: false # Enable the search feature
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next_post: "Next post"
+  str_previous_post: "Previous post"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+  str_search_no_results: "No results found."
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: false
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
-
 sass:
-    sass_dir: _sass
-    style: compressed
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate]
+theme: jekyll-theme-type
+exclude:
+  - Gemfile
+  - Gemfile.lock
