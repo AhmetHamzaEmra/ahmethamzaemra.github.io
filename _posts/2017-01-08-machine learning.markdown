@@ -2,8 +2,6 @@
 layout: post
 title: "Machine Learning for Beginners!"
 tags: [ML, Machine Learning, AI, Regression]
-<!-- feature-img: "assets/img/sample_feature_img.png" -->
-
 ---
 
 
