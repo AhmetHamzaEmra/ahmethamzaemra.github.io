@@ -12,9 +12,9 @@ I would like to start with mentioning the good parts of deep learning then we ca
 
 ### Representation Learning!
 
-Machine learning (supervised learning) is basically finding the mapping between the representation of data to labels. And there are many algorithms which can produce this function estimation but of biggest performance dependency is features. Good features mean good performance! But should we create hand designed features or should model discovers them? To be able to answer this question, first, we need to set our goals. 
+Machine learning (supervised learning) is basically finding the mapping between the representation of data to labels. And there are many algorithms which can produce this function estimation but one of the biggest performance dependency is features. Good features mean good performance! But should we create hand designed features or should model discovers them? To be able to answer this question, first, we need to set our goals. 
 
-My personal view and expectancy from AI is that it should compleat the given task with as little as possible(or no) human interaction. So let's get back to the question, clearly model should discover the features from data. Ergo, DL is the best performing method in both supervised and unsupervised learning tasks. Also, I believe, Ability to learn useful information is a big step towards to AGI. 
+My personal view and expectancy from AI is that it should compleat the given task with as little as possible(or no) human interaction. So let's get back to the question, model should discover the features from data. Ergo, DL is the best performing method in both supervised and unsupervised learning tasks. Also, I believe, Ability to learn useful information is a big step towards to AGI. 
 
 ### Transfer Learning!  
 
@@ -38,6 +38,6 @@ On another point of view, we are able to correct mistakes with reinforcement lea
 
 Deep learning created a revolution in the field of AI but how about AGI. As [Josh Tenenbaum said in his talk at MIT](https://www.youtube.com/watch?v=7ROelYvo8f0), all those great machines are just pattern-recognition systems. For example, AlphaGo is the best in its domain, but it can not even say "What GO is?" So having a general concept of the World is another problem, we as an AI community need to solve. Another great example is from [Andrej Karpathy in his blog post](https://karpathy.github.io/2012/10/22/state-of-computer-vision/), He pointed how these methods are not capable of understanding all concept rather than making a gist of sense. 
 
-## Closing thoughts
+### Closing thoughts
 
-Overall, Deep Learning definitely has potential to solve this issues. Many great advancements have been made in the area. For instance, DNC, World Models, and many others. In the end, This is what I believe in a nutshell, we all see how it is going to end up.
+Overall, Deep Learning definitely has potential to solve this issues. Many great advancements have been made in the area which proves potential. For instance, DNC, World Models, and many others. In the end, This is what I believe in a nutshell, we are going to see how it is going to end up.
