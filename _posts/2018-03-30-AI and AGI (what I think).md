@@ -34,7 +34,7 @@ Most of the current popular algorithm in Neural Network requires a lot of data. 
 
 On another point of view, we are able to correct mistakes with reinforcement learning but actually, the finding the points where we completely messed up and being able to fix it, like in Boosting methods, is another thing humans are outperforming DL models. 
 
-### Only Patern Recognation?
+### Only Patern recognition?
 
 Deep learning created a revolution in the field of AI but how about AGI. As [Josh Tenenbaum said in his talk at MIT](https://www.youtube.com/watch?v=7ROelYvo8f0), all those great machines are just pattern-recognition systems. For example, AlphaGo is the best in its domain, but it can not even say "What GO is?" So having a general concept of the World is another problem, we as an AI community need to solve. Another great example is from [Andrej Karpathy in his blog post](https://karpathy.github.io/2012/10/22/state-of-computer-vision/), He pointed how these methods are not capable of understanding all concept rather than making a gist of sense. 
 
