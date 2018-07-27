@@ -16,7 +16,7 @@ With the rise of deep learning, humanity got some of the satisfying answers and 
 
 Before I share the results, I would like to add some info about what is going on behind the scene. Holding knowledge and understanding concepts is very easy for us humans to perform. But this tasks are extremely challenging for machines to compleate. Even though this difficulties, with the [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35), Software engineers and researchers solved many problems on the way to reach the state they dreamed. One of this dreams is generating a text. With many improvements in the area like LSTM network and Word Embedings, Researchers started to get good results in text generation. In this article I will not go in to technical details too much. If you want to learn how this networks work please read this [post](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Christopher Olah.  But what it does in short is, it takes the words and trasnform them into embeding vectors. Then with the Recurrent Neural Network we predict the next work. The basic structure is as it shown below:
 
-![](../images/whnn.png)
+![](https://raw.githubusercontent.com/AhmetHamzaEmra/ahmethamzaemra.github.io/master/images/whnn.png)
 
 ## Results
 
@@ -26,6 +26,8 @@ Now I would like to share some of the scripts that are generated. Let's go to an
 
 ### Inception
 
+![](https://f.ptcdn.info/598/020/000/1403869288-Xi5bkK67T-o.jpg)
+
 Every body has an opinion about inception. Movie has everything, mindblowing script and unexpected ending. But What I wonder is what does AI thinks is going to happen next. And here is the generated script after training the network with script of the movie:
 
 > knocks on the glassjames and philippa turn- see their dad . he steps to the window , watching their bright faces shining as they run towards him ... behind him , on the table , the spinning top is still spinning . and wefade out . credits . end . **mal is pointing at the ceiling . mal why do you do it ? mal thinks , unable to remember . a faint rumble begins . ariadne oh my god . *we 're dreaming* .**
@@ -33,6 +35,8 @@ Every body has an opinion about inception. Movie has everything, mindblowing scr
 Well it seems clear that AI thinks they are in a dreem. 
 
 ### (500) Days of Summer
+
+![](https://wallpapermemory.com/uploads/689/500-days-of-summer-wallpaper-1080p-318929.jpg)
 
  The question is; After everything that happened to Tom with Summer, did he find what he was looking for with Autumn? 
 
@@ -44,12 +48,21 @@ Here is a couple of lines that our network generated:
 >
 > *summer pathetic*
 
-Unfortunately, it seems Tom is not happy after all :cry:
+Unfortunately, it seems Tom is not happy after all :S
+
+### Good Will Hunting
 
 
+
+Coming Soon!
 
 ## So what else?
 
 
 
-I wrote a 120 lines of python code, which can be found in this [here](https://github.com/AhmetHamzaEmra/What_happened_next). Feel free the experiment and please share the cool results with me :smile: Honestly, this work needs a lot of improvement, so feel free to contribute...
+I wrote a 120 lines of python code, which can be found in this [here](https://github.com/AhmetHamzaEmra/What_happened_next). Feel free the experiment and please share the cool results with me! Honestly, this work needs a lot of improvement, so feel free to contribute...
+
+
+
+
+
