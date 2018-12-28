@@ -118,6 +118,9 @@ When you are using in the sytem you also need to input a 24 frames long array. S
 Now, these two big problems should be solved. Please note that these two methods are not the best but they get the job done, but just keep in mind that I wouldn't use this project on my houses entrance 😅  Just use it in the meeting room or something like office(if you dont keep something valuable. 😄 
 
 
+In conculution, You can find all this code in [this repository](https://github.com/AhmetHamzaEmra/Intelegent_Lock).
+
+Have fun! 
 
 ### TLDR:
 
