@@ -5,11 +5,6 @@ tags: [Deep Learning, Artificial Intelengece]
 ---
 
 
-## Intelegence lock 
-
-
-
-
 
 As Andrej Karpathy said, Software2.0 is creating revalatrion in the field of software engineering. Now AI  is taking most of the heavy lifting in complexity and giving incredible results in the industry. One of this application is locks with face recognition. Although it sounds simple to combine these two technologies, it is more complex than most other applications. 
 
