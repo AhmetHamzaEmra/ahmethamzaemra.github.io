@@ -2,7 +2,7 @@
 layout: page
 title: 
 permalink: /projects/
-feature-img: "assets/images/favicons/banner.png"
+feature-img: "assets/banner.png"
 ---
 
 
