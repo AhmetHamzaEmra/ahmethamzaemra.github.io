@@ -1,6 +1,28 @@
 // Typography
-$font-family-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-headings: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+    font-style: italic, oblique;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+  }
+
+$font-family-main: "Computer Modern", sans-serif;
+$font-family-headings: "Computer Modern", sans-serif;
 $font-size: 1em;
 
 // Padding
@@ -9,29 +31,29 @@ $padding-small: 5%;
 $padding-x-small: 3%;
 
 // Brand colours general background 
-$brand-color: #283148;
-$background-color: #913535;
+$brand-color: #fff;
+$background-color: #fff;
 $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
-
+// 913535
 // Typography colours
-$text-color: #dddddd;
-$link-color: #dddddd;
-$selection-color: #003355; // visible when highlighting text
+$text-color: #000;
+$link-color: #000;
+$selection-color: #111; // visible when highlighting text
 
 // Tags color
-$tags-color: #fff;
+$tags-color: #000;
 
 //Search color
 $search-color: #999;
 
 // Header colours
-$header-link-color: #dddddd;
+$header-link-color: #222;
 
 // Feature image for articles
-$feature-image-text-color: #fff;
+$feature-image-text-color: #000;
 $feature-image-size: cover; // options include "cover", "contain", "auto"
 
 // Header description box
-$header-desc-background-color: #283148;
+$header-desc-background-color: #913535;
 $header-desc-text-color: #eeeeee;
 $header-desc-link-color: #283148;
