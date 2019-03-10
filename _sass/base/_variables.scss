@@ -2,21 +2,21 @@
 
 @font-face {
     font-family: "Computer Modern";
-    src:'../../assets/css/cmunss.otf';
+    src: url('ahmethamzaemra.github.io/assets/css/cmunss.otf');
   }
   @font-face {
     font-family: "Computer Modern";
-    src: '../../assets/css/cmunss.otf';
+    src: url('ahmethamzaemra.github.io/assets/css/cmunss.otf');
     font-weight: bold;
   }
   @font-face {
     font-family: "Computer Modern";
-    src: '../../assets/css/cmunss.otf';
+    src: url('ahmethamzaemra.github.io/assets/css/cmunss.otf');
     font-style: italic, oblique;
   }
   @font-face {
     font-family: "Computer Modern";
-    src: '../../assets/css/cmunss.otf';
+    src: url('ahmethamzaemra.github.io/assets/css/cmunss.otf');
     font-weight: bold;
     font-style: italic, oblique;
   }
@@ -38,7 +38,7 @@ $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 // Typography colours
 $text-color: #000;
 $link-color: #000;
-$selection-color: #a6ff00bd; // visible when highlighting text
+$selection-color: #111; // visible when highlighting text
 
 // Tags color
 $tags-color: #000;
