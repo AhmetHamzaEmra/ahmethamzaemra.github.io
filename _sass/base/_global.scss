@@ -77,8 +77,11 @@ code,
 kbd,
 pre,
 samp {
-  margin: 1em 0;
   background-color: #eef;
+  margin: 2em;
+  display: block;
+  padding: 20px;
+  border-radius: 25px;
 }
 code,
 language-python highlighter-rouge
