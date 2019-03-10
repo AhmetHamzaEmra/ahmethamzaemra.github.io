@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Projects
+title: 
 permalink: /projects/
-feature-img: "assets/img/banner.png"
+feature-img: "assets/images/favicons/banner.png"
 ---
 
 
