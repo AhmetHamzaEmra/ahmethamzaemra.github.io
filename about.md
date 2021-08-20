@@ -12,4 +12,4 @@ Wierd Facts about me
 * I have writen a code which is currently runing in the space
 * I crosed a country border by walking and got detained 
 * I am a CEO (I dont know how this happend)
-* People say I cook the best stake 
+* People say I cook the best steak 
