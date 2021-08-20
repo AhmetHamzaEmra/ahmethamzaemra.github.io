@@ -1,113 +1,227 @@
-## Jasper2
+# Type Theme
 
-[![Build Status](https://github.com/jekyllt/jasper2/actions/workflows/jekyll_build.yml/badge.svg)](https://github.com/jekyllt/jasper2/actions/workflows/jekyll_build.yml)
-[![Ruby](https://img.shields.io/badge/ruby-2.6.3-blue.svg?style=flat)](http://travis-ci.org/jekyllt/jasper2)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.9.0-blue.svg?style=flat)](http://travis-ci.org/jekyllt/jasper2)
+![Default Type Theme blog](https://user-images.githubusercontent.com/816965/30518919-d5978024-9bcd-11e7-81b3-3dd07e99a1f9.png)
 
-This is a full-featured port of Ghost's default theme [Casper](https://github.com/tryghost/casper)
-[v2.1.9](https://github.com/TryGhost/Casper/releases/tag/2.1.9) for [Jekyll](https://jekyllrb.com/) / [GitHub Pages](https://pages.github.com/).
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-## Live Demo
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-[Ghost's Casper](https://demo.ghost.io) // [Jasper2](https://jekyllt.github.io/jasper2)
+## Usage
 
-![home page](https://raw.githubusercontent.com/jekyllt/jasper2/master/assets/screenshot-desktop.jpg)
+1. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme): `git clone https://github.com/rohanchandra/type-theme`
+2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
+3. Install the theme's dependencies: `bundle install`
+4. Customize the theme (see below)
+5. Run the Jekyll server: `jekyll serve`
 
+## Customizing Type Theme
 
-## Features
+Open `_config.yml` in a text editor to change most of the blog's settings.
 
-* Out of the box support for multiple authors (via `_data/authors.yml`)
-* Full author information including: picture, bio, website, twitter, facebook, etc.
-* Tag description(s) and personalised covers (via `_data/tags.yml`)
-* Related posts view at the bottom of each post
-* All Ghost default pages: Author page(s), Tag page(s), About page(s), 404, etc.
-* Pagination (infinite scrolling or standard pagination, i.e. posts across multiple pages)
-* Atom Feeds by [Jekyll-feed](https://github.com/jekyll/jekyll-feed)
-* Toggleable subscribe button (requires an external service)
-* Code Syntax Highlight with [highlight.js](https://highlightjs.org/)
-* Support for Google Analytics tracking
-* Support for Disqus comments (not Ghost standard)
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. For example, to prevent the avatar from rendering in the header, the avatar line should read:
 
-
-## Getting Started
-
-### Deployment
-
-There are several alternatives to building and deploying the site:
-
-1. build the site with [GitHub Actions](https://github.com/features/actions) which pushes 
-the resulting files (the contents of `_site/` or `../jasper2-pages/`) 
-to the *gh-pages* branch. This is the approach that is currently used. See 
-[jekyll_build.yml](.github/workflows/jekyll_build.yml) for more details.
-
-2. generate the site locally (more details below) and push the resulting
-HTML to a Github repository, that GitHub Pages then host;
-
-3. build the site with [travis-ci](https://travis-ci.org/) (with goodies from
-[jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the
-generated HTML files to a *gh-pages* branch.
-
-4. deploy the static website with Jekyll-compatible hosters, such as https://www.netlify.com/, that allow for deployment from the Github repo and publish the website using CDNs. Netlify has a free starter offer.
-
-For option **2)** simply clone this repository (*master branch*), and then run
-`bundle exec jekyll serve` inside the directory. Upload the resulting `_site/` (or `../jasper2-pages/`)
-contents to your repository (*master branch* if uploading as your personal page
-(e.g. username.github.io) or *gh-pages branch* if uploading as a project page
-(as for the [demo](https://github.com/jekyllt/jasper2/tree/gh-pages)).
-
-For option **3)** you will need to set up travis-ci for your personal fork. Briefly all you
-need then is to change your details in *[\_config.yml](_config.yml)* so that you can push
-to your github repo. You will also need to generate a secure key to add to your
-*[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file).
-Also make sure you read the documentation from
-[jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear
-advantages in that you simply push your file changes to GitHub and all the HTML files
-are generated for you and pushed to *gh-pages*. Also you get to know if everything is
-still fine with your site builds. Don't hesitate to contact me if you still have any
-issues (see below about issue tracking).
-
-### Author Pages
-
-In order to properly generate author pages you need to rename the field *author* in the
-front matter of every post to match that of your each author's *username* as defined
-in the *[\_data/authors.yml](_data/authors.yml)* file.
-With the latest update, multiple author blogs are now supported out of the box.
-
-### Compiling Styles
-
-Following on the way Casper styles are compiled as [described here](https://github.com/tryghost/casper#development):
-
-Jasper2 styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need Node and Gulp installed globally. After that, from the theme's root directory:
-
-```bash
-$ npm install
-$ gulp
+```yml
+theme:
+  title: Type Theme
+  avatar:
+  gravatar:
 ```
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+Notice the avatar variable is left intentionally blank.
 
-## Issues and Contributing
+Below is a summary of the configuration options in Type Theme.
 
-This install builds well with Ruby v2.6.3 and Jekyll v3.9.0. If you run into any problems
-please log them on the [issue tracker](https://github.com/jekyllt/jasper2/issues).
+### Site configuration
+The most common configurations, included here for guidance, are:
 
-Feel free pull-request your patches and fixes.
+Jekyll website *without* a subpath (such as a GitHub Pages website for a given username):
 
-## Thanks
+```yml
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://username.github.io"
+```
 
-Many thanks to the Ghost team for all the design work. Also many thanks to all contributors,
-that help keeping the project alive and updated :smile:
+Jekyll website *with* subpath (like the Type Theme demo page):
+
+```yml
+# SITE CONFIGURATION
+baseurl: "/sub-directory"
+url: "https://username.github.io/"
+```
+
+Please configure this in `_config.yml` before using the theme.
+
+### Meta
+
+Meta variables hold basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+
+Change these variables in `_config.yml`:
+
+| Variable | Example | Description | Optional |
+|-------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------|
+| title | My Jekyll Blog | Name of website | Yes |
+| avatar | assets/img/avatar.png | Path of avatar image, to be displayed in the theme's header | Yes |
+| gravatar | f9879d71855b5ff21e4963273a886bfc | [MD5 hash of your email address](https://secure.gravatar.com/site/implement/hash/) to load your Gravatar in the theme's header | Yes |
+| description | My blog posts | Short description, primarily used by search engines | Yes |
+
+### Header and footer text
+
+Change these variables in `_config.yml`:
 
 
-## Copyright & License
+| Variable | Example | Description | Optional |
+|---------------------------|------------------------------|-------------------------------------------------------------------------|----------|
+| header_text | Welcome to my Jekyll blog | HTML (shown below the navigation) with a background colour for emphasis | Yes |
+| header_text_feature_image | assets/img/sample_feature_img_3.png | Background image for the header text | Yes |
+| footer_text | Copyright 2014 | HTML (shown at end of the site) with lighter text | Yes |
 
-Same licence as the one provided by Ghost's team. See Casper's theme [license](GHOST.txt).
+### Icons
 
-Copyright (C) 2015-2021 - Released under the MIT License.
+Add your username on selected websites in the icon section of the `_config.yml` file to display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the header navigation. All icon variables should be your username enclosed in quotes (e.g. "username"), except for the following variables:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+| Variable | Example | Description | Optional |
+|----------------|-------------------------------------------------|--------------------------------------------------------|----------|
+| rss | true | Takes boolean value (true/false) to show RSS feed icon | Yes |
+| email_address | type@example.com | Email address | Yes |
+| linkedin | https://www.linkedin.com/in/FirstLast | Full URL to profile on LinkedIn | Yes |
+| stack_exchange | https://stackoverflow.com/users/0000/first-last | Full URL to profile on Stack Exchange | Yes |
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+### Scripts
+
+Change these variables in `_config.yml`:
+
+
+| Variable | Example | Description | Optional |
+|------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------|----------|
+| google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en) | Yes |
+| disqus_shortname | shortname | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-) | Yes |
+| katex | true | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) scripts required for math typesetting | Yes |
+
+Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
+
+### Localization strings
+
+Change localization string variables in `_config.yml`.
+
+English text used in the theme (such as the "continue reading" label) has been grouped  so you can quickly translate the theme or change labels to suit your needs.
+
+### Colours, typography, padding
+
+![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
+
+
+| Variable | Example | Description | Optional |
+|--------------|----------------------------|--------------------------------------|--------------------------------------------------------------|
+| google_fonts | "Playfair+Display:400,700\ | PT+Sans:400,700,700italic,400italic" | [Google Fonts](https://www.google.com/fonts) to load for use |
+
+Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
+
+Once you have loaded a Google Font in `config.yml`, you can integrate the fonts into your CSS by changing the font-family in `_variables.scss`. For example, after loading the Playfair Display and PT Sans fonts from Google:
+
+```css
+// Typography
+$font-family-main: 'PT Sans', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Playfair Display', Helvetica, Arial, sans-serif;
+```
+
+Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
+
+## Posts and pages in Type Theme
+Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). Non-standard features are documented below.
+
+### Math typesetting
+Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
+
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
+
+```latex
+Type math within a sentence $$2x^2 + x + c$$ to display inline
+```
+
+For display math typesetting, type your math expression on a *new line*. For example:
+
+```latex
+$$
+  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+$$
+```
+
+Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
+
+### Feature images
+
+![Posts with geometric feature images](https://cloud.githubusercontent.com/assets/816965/5142406/19726478-71d6-11e4-8111-94f788b0e44d.png)
+
+Add a feature image by specifying a path to an image in the [front matter](http://jekyllrb.com/docs/frontmatter/) in the form of `feature-img: "img/PATH_TO_IMAGE.png"`.
+
+For example:
+
+```yml
+---
+layout: post
+title: Hello World
+feature-img: "assets/img/sample_feature_img.png"
+---
+```
+
+### Hiding pages from navigation
+
+In the Front Matter of a page, add `hide: true` to prevent the page from showing up in the header's navigation bar (visitors can still visit the URL through other means).
+
+For example:
+
+```yml
+---
+layout: page
+title: "Error 404: Page not found"
+permalink: /404.html
+hide: true
+---
+```
+
+### Tags
+
+Post tags should be placed between `[]` in your post metadata. Seperate each tag with a comma.
+
+For example:
+
+```yml
+---
+layout: post
+title: Markdown and HTML
+tags: [sample, markdown, html]
+---
+```
+
+A tags listing will be automatically generated using the `tags.html` file provided in Type theme. If you're not using the tags feature it is safe to delete `tags.html`.
+
+### Search
+
+The search feature can be activated in the `_config.yml` file by changing its value from `false` to `true`.
+
+```yml
+  #Scripts
+  search: true
+```
+
+Once activated, the search bar will appear in the header. This feature uses [Lunr](https://lunrjs.com/) and searches through the title, tags and content of your posts.
+
+### Subtitles
+A subtitle can be displayed below your title on permalink post pages.
+
+To enable this feature, add `subtitle` to your post metadata.
+
+For example:
+
+```yml
+---
+layout: post
+title: "This is a title"
+subtitle: "This is a subtitle"
+---
+```
+
+## License
+[The MIT License (MIT)](https://github.com/rohanchandra/type-theme/blob/master/LICENSE)

@@ -1,0 +1,59 @@
+// Typography
+
+@font-face {
+    font-family: "Computer Modern";
+    src:  url("../css/cmunss.otf");
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url("../css/cmunss.otf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src:  url("../css/cmunss.otf");
+    font-style: italic, oblique;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src:  url("../css/cmunss.otf");
+    font-weight: bold;
+    font-style: italic, oblique;
+  }
+
+$font-family-main: "Computer Modern", sans-serif;
+$font-family-headings: "Computer Modern", sans-serif;
+$font-size: 1em;
+
+// Padding
+$padding-large: 20%;
+$padding-small: 5%;
+$padding-x-small: 3%;
+
+// Brand colours general background 
+$brand-color: #fff;
+$background-color: #fff;
+$border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
+// 913535
+// Typography colours
+$text-color: #000;
+$link-color: #000;
+$selection-color: #111; // visible when highlighting text
+
+// Tags color
+$tags-color: #000;
+
+//Search color
+$search-color: #999;
+
+// Header colours
+$header-link-color: #222;
+
+// Feature image for articles
+$feature-image-text-color: #000;
+$feature-image-size: cover; // options include "cover", "contain", "auto"
+
+// Header description box
+$header-desc-background-color: #913535;
+$header-desc-text-color: #eeeeee;
+$header-desc-link-color: #283148;
