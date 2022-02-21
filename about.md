@@ -5,11 +5,11 @@ permalink: /about/
 feature-img: "assets/img/sample_feature_img_2.png"
 ---
 
- In 1995 one hot summer day, I was born in Eskisehir/Turkey. Since then, I have been doing stupid things and learning new things. These days, I am working as Data scientist. Its a quite nice topic to work if you ask me. I like math, poems, and drawing. 
+ In 1995 one hot summer day, I was born in Eskisehir/Turkey. Since then, I have been doing stupid things and learning. These days, I am working as Data scientist. Its a quite nice topic to work if you ask me. I like math, poems, and drawing. 
 
 Wierd Facts about me 
-* I have writen a code which is currently runing in the space
+* I have a code which is currently runing in the space
 * I crosed a country border by walking
-* I am a CEO (I dont know how this happend)
+* I have a company
 * People say I cook the best steak 
 * I have lordship from Scotland
