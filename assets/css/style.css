@@ -80,7 +80,7 @@
     font-size: 23px;
     text-align: Left;
     margin-top: 13px;
-    margin-bottom: 45px;
+    margin-bottom: 15px;
     line-height: 125%;
     column-count: 1;
 }
@@ -153,4 +153,8 @@
 
 .HUGE{
     font-size: 33px;
+}
+
+.indented{
+    margin-left: 40px;
 }
